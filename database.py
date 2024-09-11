@@ -16,6 +16,9 @@ DB_PASS = os.getenv('DB_PASS')
 
 # Função para salvar os dados validos no PostgreSQL
 def salvar_no_postgres(dados: Venda):
+    """"
+    Função pra salvar no banco de dados PostgreSQL
+    """
     try:
         conn = psycopg2.connect(
             host=DB_HOST,
